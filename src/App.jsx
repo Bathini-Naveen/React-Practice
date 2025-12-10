@@ -408,9 +408,42 @@ import { BiscuitContext, ChocolateContext, MixingContext } from './useContext/In
 
 // !useMemo
 // @05/12/2025
-import UseMemoHook from './useMemo/UseMemoHook'
+// import UseMemoHook from './useMemo/UseMemoHook'
+// const App = () => {
+//   return <UseMemoHook/>
+// }
+
+// export default App
+
+// !09/12/2025
+// @Task
+import Videoplayer from './Task1/Videoplayer'
+import './Task1/style.css'
+
 const App = () => {
-  return <UseMemoHook/>
+
+let videos = [
+  "https://cdn.pixabay.com/video/2025/09/22/305657_tiny.mp4", 
+  "https://cdn.pixabay.com/video/2025/11/28/318654_tiny.mp4",
+  "https://cdn.pixabay.com/video/2025/11/28/318540_tiny.mp4",
+  "https://cdn.pixabay.com/video/2025/07/27/293788_tiny.mp4",
+  "https://cdn.pixabay.com/video/2024/05/18/212404_tiny.mp4"
+];
+
+
+
+  return <Videoplayer videos={videos}/>
 }
 
 export default App
+
+// !useCallback()
+// @10/12/2025
+// import Parent from "./useCallback/Parent"
+// const App = () => {
+//   return (
+//     <Parent/>
+//   )
+// }
+
+// export default App
